@@ -26,6 +26,7 @@ Route.get('/', async () => {
 })
 
 Route.get('users', 'UsersController.get')
+Route.post('users', 'UsersController.post')
 
 Route.get('health', async ({ response }) => {
   const report = await HealthCheck.getReport()
